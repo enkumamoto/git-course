@@ -22,26 +22,26 @@ Arquivo da aula de Git e github para iniciante.
 	todo o ciclo.
 
 2 - Comandos Git
+	Adicionando Usuário Global:
+	git config --global user.name "User Name"
 
-Adicionando Usuário Global:
-git config --global user.name "User Name"
+	Adicionando Editor padrão:
+	git config --global core.editor "nano"
 
-Adicionando Editor padrão:
-git config --global core.editor "nano"
+	Adicionando Contato de email o Usuário:
+	git config --global user.email "email@dominio.com"
 
-Adicionando Contato de email o Usuário:
-git config --global user.email "email@dominio.com"
+	Checagem do Status do Git:
+	git status
 
-Checagem do Status do Git:
-git status
+	Adicionando arquivo ao repositório:
+	git add nomedoarquivo
 
-Adicionando arquivo ao repositório:
-git add nomedoarquivo
+	Realizando commit:
+	git commit -m "Add Readme.md"  ---- O -m é usado para passar alguma mensagem alertando alguma modificação
 
-Realizando commit:
-git commit -m "Add Readme.md"  ---- O -m é usado para passar alguma mensagem alertando alguma modificação
+	[master (root-commit) 6539a04] Add Readme.md ---- O código ápos o (toot-commit) é um rash identificador, caso queira voltar versão ou verificar os logs
+	1 file changed, 39 insertions(+) ---- Aqui diz quantos arquivos modificados e quantas interações no arquivo.
+	create mode 100644 Readme.md
 
-[master (root-commit) 6539a04] Add Readme.md ---- O código ápos o (toot-commit) é um rash identificador, caso queira voltar versão ou verificar os logs
- 1 file changed, 39 insertions(+) ---- Aqui diz quantos arquivos modificados e quantas interações no arquivo.
- create mode 100644 Readme.md
-
+	Lembre-se, se o arquivo for editado e não readiciona-lo ao repositório e realizar commit, o git retornará um erro.
