@@ -23,17 +23,25 @@ Arquivo da aula de Git e github para iniciante.
 
 2 - Comandos Git
 
-Adicionando Usuário Global
+Adicionando Usuário Global:
 git config --global user.name "User Name"
 
-Adicionando Editor padrão
+Adicionando Editor padrão:
 git config --global core.editor "nano"
 
-Adicionando Contato de email o Usuário
+Adicionando Contato de email o Usuário:
 git config --global user.email "email@dominio.com"
 
-Checagem do Status do Git
+Checagem do Status do Git:
 git status
 
-Adicionando arquivo ao repositório
+Adicionando arquivo ao repositório:
 git add nomedoarquivo
+
+Realizando commit:
+git commit -m "Add Readme.md"  ---- O -m é usado para passar alguma mensagem alertando alguma modificação
+
+[master (root-commit) 6539a04] Add Readme.md ---- O código ápos o (toot-commit) é um rash identificador, caso queira voltar versão ou verificar os logs
+ 1 file changed, 39 insertions(+) ---- Aqui diz quantos arquivos modificados e quantas interações no arquivo.
+ create mode 100644 Readme.md
+
