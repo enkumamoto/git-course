@@ -137,3 +137,6 @@ Arquivo da aula de Git e github para iniciante.
 	Com o git diff --name-only pode-se filtrar pelo nome do arquivo e ele listará todos os arquivos com o mesmo nome.
 	
 	Usando git commit -am faz com que o arquivo já existente seja adicionado e commitado.
+
+	Caso o arquivo contenha alguma coisa errada, ou desnecessário, basta usar o comando git checkout seguido do nome do arquivo
+	assim o arquivo volta para o ponto anterior a edição.
