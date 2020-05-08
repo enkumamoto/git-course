@@ -140,3 +140,42 @@ Arquivo da aula de Git e github para iniciante.
 
 	Caso o arquivo contenha alguma coisa errada, ou desnecessário, basta usar o comando git checkout seguido do nome do arquivo
 	assim o arquivo volta para o ponto anterior a edição.
+
+	Simulando:
+	eiji@lpiss:~/git-course$ git add Readme.md ---- Adicionando arquivo
+	eiji@lpiss:~/git-course$ git status ---- Checando status
+	No ramo master
+	Mudanças a serem submetidas:
+	  (use "git reset HEAD <file>..." to unstage)
+	
+	        modified:   Readme.md 
+	
+	eiji@lpiss:~/git-course$ git diff Readme.md ---- Checando e recebendo sem retorno
+	eiji@lpiss:~/git-course$ 
+	eiji@lpiss:~/git-course$ git reset HEAD Readme.md ---- Retirando de modo Staged
+	Unstaged changes after reset:
+	M       Readme.md
+	eiji@lpiss:~/git-course$ git status ---- checando status
+	No ramo master
+	Changes not staged for commit:
+	  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+	  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+	
+	        modified:   Readme.md
+	
+	nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+	eiji@lpiss:~/git-course$ git diff ---- verificando conteúdo
+	diff --git a/Readme.md b/Readme.md
+	index 7bd0e30..55e5ab7 100644
+	--- a/Readme.md
+	+++ b/Readme.md
+	@@ -140,3 +140,5 @@ Arquivo da aula de Git e github para iniciante.
+	 
+	        Caso o arquivo contenha alguma coisa errada, ou desnecessário, basta usar o comando git checkout seguido do nome do arquivo
+	        assim o arquivo volta para o ponto anterior a edição.
+	+
+	+svdkjghaproghaerbjajobaejgb --- linha com erro
+	eiji@lpiss:~/git-course$ git checkout Readme.md ---- Retornando arquivo para o ponto anterior
+	eiji@lpiss:~/git-course$ git status ---- checando status
+	No ramo master
+	nothing to commit, working tree clean
