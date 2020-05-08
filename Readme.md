@@ -179,3 +179,11 @@ Arquivo da aula de Git e github para iniciante.
 	eiji@lpiss:~/git-course$ git status ---- checando status
 	No ramo master
 	nothing to commit, working tree clean
+	
+	Caso queira retornar a versão do arquivo após ter realizado o commit deve-se ficar atento para usar o reset.
+	O git reset --soft --mixed --hard 'hash'
+	git reset --soft 'hash': deve-se usar a hash anterior ao último commit, pois voltando a versão o ultimo hash deixará de existir
+	com isso deverá veririficar usando um git log, achar a hash e em seguida usar o git reset --soft 'hash' e por fim a versão que 
+	foi retornada estará pronta para realizar commit.
+
+	
