@@ -130,3 +130,6 @@ Arquivo da aula de Git e github para iniciante.
 	+       Pode-se filtrar por ordem alfabetica
 	+       git shortlog
 
+	Executando o comando git diff apresentará a ultima modificação feita no arquivo. Mesmo que não adicione e realize commit
+	será apresentado está modificação. Mas se adicionar e commitar, o git diff não retorna output. Este comando é importante
+	para revisar o conteudo do arquivo antes de realizar um commit.
