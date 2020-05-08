@@ -133,3 +133,7 @@ Arquivo da aula de Git e github para iniciante.
 	Executando o comando git diff apresentará a ultima modificação feita no arquivo. Mesmo que não adicione e realize commit
 	será apresentado está modificação. Mas se adicionar e commitar, o git diff não retorna output. Este comando é importante
 	para revisar o conteudo do arquivo antes de realizar um commit.
+	
+	Com o git diff --name-only pode-se filtrar pelo nome do arquivo e ele listará todos os arquivos com o mesmo nome.
+	
+	Usando git -am commit faz com que o arquivo seja adicionado e commitado.
