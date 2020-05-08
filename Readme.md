@@ -45,3 +45,31 @@ Arquivo da aula de Git e github para iniciante.
 	create mode 100644 Readme.md
 
 	Lembre-se, se o arquivo for editado e não readiciona-lo ao repositório e realizar commit, o git retornará um erro.
+
+	Verificando o log do GIT
+	git log ---- este comando apresenta:
+	
+	eiji@lpiss:~/git-course$ git log
+	commit cc1d6907250b01685fbb64b3576a006fb71fe702 (HEAD -> master) ---- uma HASH do commit para identificação
+	Author: Eiji Kumamoto <eiji.kumamoto@gmail.com> ---- o email de quem editou
+	Date:   Tue May 5 14:03:20 2020 -0300 ---- Data e hora
+
+            Readme.md editado por Eiji novamente ---- O arquivo e o comentário
+
+	commit 85bae6dd3dee29e82eb7765b13665e944694e04c
+	Author: Eiji Kumamoto <eiji.kumamoto@gmail.com>
+	Date:   Tue May 5 14:01:24 2020 -0300
+
+	    Readme.md editado por Eiji
+
+	commit 6539a043d9292d1265ec7ce5ba8ae11f56d65c41
+	Author: Eiji Kumamoto <eiji.kumamoto@gmail.com>
+	Date:   Tue May 5 13:55:16 2020 -0300
+
+	    Add Readme.md
+	
+	Pode-se filtrar por Autor
+	git log --author="Autor"
+
+	Pode-se filtrar por ordem alfabetica
+	git shortlog
