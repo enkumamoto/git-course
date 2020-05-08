@@ -186,4 +186,4 @@ Arquivo da aula de Git e github para iniciante.
 	com isso deverá veririficar usando um git log, achar a hash e em seguida usar o git reset --soft 'hash' e por fim a versão que 
 	foi retornada estará pronta para realizar commit.
 
-	
+
