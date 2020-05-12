@@ -195,3 +195,6 @@ Arquivo da aula de Git e github para iniciante.
 	eiji@lpiss:~/git-course$ git remote -v ---- apresenta o endereçamento
 	origin  git@github.com:enkumamoto/git-course.git (fetch)
 	origin  git@github.com:enkumamoto/git-course.git (push)
+
+	Enviando arquivos remotamente para o repositório remoto
+	git push -u origin master ---- o comando enviará todos os arqivos do diretório (master) para o repositório (origin)
