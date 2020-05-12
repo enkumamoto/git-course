@@ -31,6 +31,8 @@ Arquivo da aula de Git e github para iniciante.
 	Adicionando Contato de email o Usuário:
 	git config --global user.email "email@dominio.com"
 
+	Antes de começar a usar o git, deve-se criar a pasta do projeto. E dentro dela digitar o comando git init e ele é responsável por iniciar o repositório.
+
 	Checagem do Status do Git:
 	git status
 
