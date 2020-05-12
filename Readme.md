@@ -170,9 +170,6 @@ Arquivo da aula de Git e github para iniciante.
 	--- a/Readme.md
 	+++ b/Readme.md
 	@@ -140,3 +140,5 @@ Arquivo da aula de Git e github para iniciante.
-	 
-	        Caso o arquivo contenha alguma coisa errada, ou desnecessário, basta usar o comando git checkout seguido do nome do arquivo
-	        assim o arquivo volta para o ponto anterior a edição.
 	+
 	+svdkjghaproghaerbjajobaejgb --- linha com erro
 	eiji@lpiss:~/git-course$ git checkout Readme.md ---- Retornando arquivo para o ponto anterior
@@ -182,9 +179,19 @@ Arquivo da aula de Git e github para iniciante.
 	
 	Caso queira retornar a versão do arquivo após ter realizado o commit deve-se ficar atento para usar o reset.
 	O git reset --soft --mixed --hard 'hash'
+	
 	git reset --soft 'hash': deve-se usar a hash anterior ao último commit, pois voltando a versão o ultimo hash deixará de existir
 	com isso deverá veririficar usando um git log, achar a hash e em seguida usar o git reset --soft 'hash' e por fim a versão que 
 	foi retornada estará pronta para realizar commit.
 
+	git reset --mixed 'hash': faz o que o --soft mas põe o arquivo antes do modo staged
 
-1234567890qwertyuiopasdfghjklçzxcvbnm
+	git reset --hard 'hash': faz o mesmo do mixed, mas também sobrescreve o conteúdo do meu working dir.
+
+	Adicionando repositorio remoto
+	git remote add origin git@github.com:enkumamoto/git-course.git
+	eiji@lpiss:~/git-course$ git remote ---- apresenta o nome do repositório
+	origin
+	eiji@lpiss:~/git-course$ git remote -v ---- apresenta o endereçamento
+	origin  git@github.com:enkumamoto/git-course.git (fetch)
+	origin  git@github.com:enkumamoto/git-course.git (push)
