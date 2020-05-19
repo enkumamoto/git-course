@@ -201,17 +201,24 @@ Arquivo da aula de Git e github para iniciante.
 	Enviando arquivos remotamente para o repositório remoto
 	git push -u origin master ---- o comando enviará todos os arqivos do diretório (master) para o repositório (origin)
 	
-	Git permite clonar repositórios do github
-	VIA SSH: git clone git@github.com:enkumamoto/python-LOM.git ---- o caminho do repositório é disponibilizado na página do github
+	Git permite clonar repositórios do github. o caminho do repositório é disponibilizado na página do github
+	VIA SSH: git clone git@github.com:enkumamoto/python-LOM.git
 
 	ou
 
 	VIA HTTPS: git clone https://github.com/enkumamoto/python-LOM.git
 
 3 - Recursos na página do GitHub
-
 	Botão Fork serve para copiar um repositório de terceiros, a intenção é contribuir com o repositório
 	corrigindo-o ou complementando ou melhorando o código e por fim reenvia-lo para o dono do repositório 
 	através de request e informar as mudanças realizadas. Então clica em Fork e vai abrir as opções para 
 	onde irá a cópia, clica na organização e a cópia será automaticamente feita. É diferente do clone, pois
 	irá copiar, o usuário consegue modificar mas não envia de volta para o owner.
+
+4 - O que é branch?
+	É um ponteiro móvel que leva a um commit.
+	Quando um repositório é criado e a cada commit é gerado uma hash e para cada hash é feito um snapshot,
+	o branch apontará para o commit e o primeiro branch se chama master, quando realizado o commit a versão 
+	original deixa de ser master, recebe um hash, faz-se um snapshot e a versão atualizada do arquivo torna-se 
+	master. O git permite que o branch master fique em outro hash (que não é o arquivo que esteja trabalhando 
+	no momento)
