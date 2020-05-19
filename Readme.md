@@ -200,3 +200,10 @@ Arquivo da aula de Git e github para iniciante.
 
 	Enviando arquivos remotamente para o repositório remoto
 	git push -u origin master ---- o comando enviará todos os arqivos do diretório (master) para o repositório (origin)
+	
+	Git permite clonar repositórios do github
+	VIA SSH: git clone git@github.com:enkumamoto/python-LOM.git
+
+	ou
+
+	VIA HTTPS: git clone https://github.com/enkumamoto/python-LOM.git
