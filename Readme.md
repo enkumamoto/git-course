@@ -202,8 +202,16 @@ Arquivo da aula de Git e github para iniciante.
 	git push -u origin master ---- o comando enviará todos os arqivos do diretório (master) para o repositório (origin)
 	
 	Git permite clonar repositórios do github
-	VIA SSH: git clone git@github.com:enkumamoto/python-LOM.git
+	VIA SSH: git clone git@github.com:enkumamoto/python-LOM.git ---- o caminho do repositório é disponibilizado na página do github
 
 	ou
 
 	VIA HTTPS: git clone https://github.com/enkumamoto/python-LOM.git
+
+3 - Recursos na página do GitHub
+
+	Botão Fork serve para copiar um repositório de terceiros, a intenção é contribuir com o repositório
+	corrigindo-o ou complementando ou melhorando o código e por fim reenvia-lo para o dono do repositório 
+	através de request e informar as mudanças realizadas. Então clica em Fork e vai abrir as opções para 
+	onde irá a cópia, clica na organização e a cópia será automaticamente feita. É diferente do clone, pois
+	irá copiar, o usuário consegue modificar mas não envia de volta para o owner.
