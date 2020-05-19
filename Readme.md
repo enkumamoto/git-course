@@ -224,3 +224,10 @@ Arquivo da aula de Git e github para iniciante.
 	original deixa de ser master, recebe um hash, faz-se um snapshot e a versão atualizada do arquivo torna-se 
 	master. O git permite que o branch master fique em outro hash (que não é o arquivo que esteja trabalhando 
 	no momento)
+	
+	Vantagens do uso do branch:
+	1 - poder modificar sem alterar o local principal (Master)
+	2 - é facilmente desligável, pode-se criar e apagar os branches sem problemas
+	3 - múltiplas pessoas trabalhando em branches diferente ao mesmo tempo
+	4 - evita conflitos, já que existe branches diferentes, pode-se trabalhar isoladamente
+	    de outras pessoas e evitando conflitos no arquivo.
