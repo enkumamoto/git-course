@@ -231,3 +231,83 @@ Arquivo da aula de Git e github para iniciante.
 	3 - múltiplas pessoas trabalhando em branches diferente ao mesmo tempo
 	4 - evita conflitos, já que existe branches diferentes, pode-se trabalhar isoladamente
 	    de outras pessoas e evitando conflitos no arquivo.
+
+4.1 - Utilizando branches
+
+	git checkout -b <branch name> ---- o argumento -b cria um branch
+	
+	ao digitar o comando git branch, ele mostrará qual branch está utilizando.
+	
+	para mudar de um branch para outro deve-se utilizar git branch <branch name>
+	
+	para apagar um branch basta utilizar git branch -D <branch name>
+
+5 - Merge e rebase
+	
+	São métodos de unir branches. Ambos tem mesma função mas com algumas diferenças
+	
+
+	Imagine que temos o seguinte estado inicial onde dois branches apontam para o mesmo commit
+
+			   Branch Master
+
+	C0 <------- C1 <------- C2
+
+			   Branch Iss53
+
+	
+	Com isso criaou-se um novo commit com o novo branch, deixando o commit master apontando para o C2.
+	isso ainda mantem a situação abaixo linear.
+
+                           Branch Master
+
+        C0 <------- C1 <------- C2 <------- C3
+
+				       Branch Iss53
+
+
+	Se criar um outro novo commit a partir do master, será criada uma ramificação
+
+                          Branch Master     Branch Hotfix
+
+        C0 <------- C1 <------- C2 <------- C4
+				 \
+				  \
+				   C3
+                                Branch Iss53
+
+
+        Se criar um outro novo commit a partir do Iss53, será modificada a ramificação.
+	C5 e C3 estrão apontados para o C2 e o C4 passa a ser o master.
+
+                                       Branch Master
+
+        C0 <------- C1 <------- C2 <------- C4
+                                 \ 
+                                  \  
+                                   C3 <------- C5
+                                          Branch Iss53
+
+
+	Para juntar todos os commits e deixar tudo linear, será necessário realizar um novo
+	commit juntando C3, C4 e C5.
+
+                                                   Branch Master
+
+        C0 <------- C1 <------- C2 <------- C4 <------- C6
+                                 \                      /
+                                  \                    /  
+                                   C3 <------- C5 <----
+                                          Branch Iss53
+
+	Isso é realizar merge, que acaba criando um ciclo ou forma diamante.
+
+	Quais os pros e contras do merge?
+	Pro:
+	   Operação não destrutiva, não vai destruir commit mas criará novo commit
+	   para juntar tudo, sem estragar ou movimentar o histórico
+	   
+
+	Contra:
+	   commit extra sem sentido, que não junta código ou cria novo arquivo
+	   deixa o histórico poluído
