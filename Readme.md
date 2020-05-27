@@ -247,6 +247,9 @@ Arquivo da aula de Git e github para iniciante.
 	São métodos de unir branches. Ambos tem mesma função mas com algumas diferenças
 	
 
+
+5.1 - Merge
+
 	Imagine que temos o seguinte estado inicial onde dois branches apontam para o mesmo commit
 
 			   Branch Master
@@ -311,3 +314,29 @@ Arquivo da aula de Git e github para iniciante.
 	Contra:
 	   commit extra sem sentido, que não junta código ou cria novo arquivo
 	   deixa o histórico poluído
+
+5.2 - Rebase
+
+	Estado inicial, commits distintos apontados para o C2
+
+                                       Branch Master
+
+        C0 <------- C1 <------- C2 <------- C4
+                                 \
+                                  \
+                                   C3
+                                Branch Experiment
+
+
+	O rebase moverá o commit do Experiment (C3) para após o C4 e assim ficará linear
+	e acaba realizando um processo de fast foward e aplica todas as mudanças para frente
+	da fila.
+	Assim os dois branches apontam para o mesmo commit.
+
+	                                         Branch Master    
+ 
+        C0 <------- C1 <------- C2 <------- C4 <-------C3' 
+
+                                                 Branch Experiment
+                                  
+                                   C3 (Branch Morto)
