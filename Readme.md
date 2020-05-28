@@ -340,3 +340,18 @@ Arquivo da aula de Git e github para iniciante.
                                                  Branch Experiment
                                   
                                    C3 (Branch Morto)
+
+       Quais os pros e contras do rebase?
+        Pro:
+           Evita commits extras
+	   Historico linear
+
+
+        Contra:
+           Perde a ordem cronológica dos commits
+	   Se mais pessoas estão trabalhando no mesmo arquivo
+	   pode gerar problemas para upload de arquivos e con
+	   flitos.
+
+	Obs.: use git pool --rebase (para evitar mudanças de histórico)
+
