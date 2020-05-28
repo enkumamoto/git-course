@@ -355,3 +355,15 @@ Arquivo da aula de Git e github para iniciante.
 
 	Obs.: use git pool --rebase (para evitar mudanças de histórico)
 
+6 - Arquivo .gitignore
+	
+	Serve para evitar que arquivos especificos não tornem-se públicos.
+	Ele funciona como um arquivo dentro do repositório (diretporio principal) e dentro dele
+	tem escrito alguns padões para não ser utilizado. Por exemplo:
+	1 - Criar um arquivo .gitignore
+	2 - Dentro do arquivo escreve-se o que será ignorado ou não público: *.json - Neste caso
+	    todos os arquivos json serão ignorados
+	3 - Se rodar o comando git status, todos os arquivos json não serão apresentados
+	
+	Pode-se ignorar um arquivo específico.
+	
