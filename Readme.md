@@ -386,3 +386,9 @@ Arquivo da aula de Git e github para iniciante.
 	e nela pode-se passar uma mensagem sobre o arquivo que deu upload. Para isso deve-se
 	usar o comando:
 	git tag -a <número da versão> -m "Mensagem sobre o arquivo"
+	Feito isso basta rodar o comando:
+	git push origin master --tags
+	Verificando no GitHub e acessando o release verá quem fez o upload, data, número de 
+	versão e o código fonte.
+	Verificando as tags do arquivo:
+	git tag
