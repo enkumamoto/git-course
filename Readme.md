@@ -208,6 +208,12 @@ Arquivo da aula de Git e github para iniciante.
 
 	VIA HTTPS: git clone https://github.com/enkumamoto/python-LOM.git
 
+	git stash ---- serve quando está trabahando num arquivo, salva-lo sem subir para uma nova versão e mantê-lo em WIP (Work In Progress). 
+		       Com isso pode-se realizar outros trabalhos e depois retornar a editar o arquivo em stash usando o comando seguinte.
+	git stash apply ---- quando retornar ao trabalho com o arquivo ele apresentará as modificações feitas.
+	git stash list ---- apresenta todos os arquivos em stash.
+	git stash clear ---- limpará tudo que está no stash.
+
 3 - Recursos na página do GitHub
 	
 	Botão Fork serve para copiar um repositório de terceiros, a intenção é contribuir com o repositório
