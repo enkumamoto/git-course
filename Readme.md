@@ -392,3 +392,25 @@ Arquivo da aula de Git e github para iniciante.
 	versão e o código fonte.
 	Verificando as tags do arquivo:
 	git tag
+
+9 - git revert
+	
+	Serve para reverte um modificação feita num arquivo que problematico dentro da aplicação
+	em produção.
+	Para resolver este problema, deve-se pegar o hash do commit problematico usar o comando:
+	git revert <hash>
+	Na prática este comando puxará o commit anterior ao hash dado no comando e sinalizará
+	dentro do log.
+	Se verificar mais a fundo, o comando apagará o que foi feito. Mas ele não apaga o commit 
+	problemático.
+	Atenção para não confundir revert com reset.
+
+10 - Apagando Tags e Branches remotamente
+
+	Para apagar tags dentro do git basta usar o comando:
+	git tag -d <tag>
+	Se realizar novo push o GitHub não apagará as tags que foram subidas.
+	Para apagar do repositório remoto basta usar:
+	git push origin :<tag>
+	O branch é da mesma forma:
+	git push origin :<branch>
