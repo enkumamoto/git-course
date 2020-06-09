@@ -373,3 +373,16 @@ Arquivo da aula de Git e github para iniciante.
 	
 	Pode-se ignorar um arquivo específico.
 	
+7 - Criando Alias de comandos
+	
+	O GIT aceita que sejam criados alias para os comandos, por exemplo:
+	git config --global alias.<alias desejado> <comando/argumento> ---- o --global é para manter
+	 o alias em escopo global.
+	Na prática mudando git status para git s: git config --global alias.s status
+
+8 - Tags
+	
+	A teg serve para apresentar um versionamento (que mudará o release dentro do GitHub)
+	e nela pode-se passar uma mensagem sobre o arquivo que deu upload. Para isso deve-se
+	usar o comando:
+	git tag -a <número da versão> -m "Mensagem sobre o arquivo"
